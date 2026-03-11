@@ -23,7 +23,6 @@ class MyInfoPage {
         cy.get(this.selectorsList().activeInputField).eq(5).clear().type(driversLicense) //Driver's License Number (max 30)
         cy.get(this.selectorsList().dateInputField).eq(0).clear().type(licenseExpireDate)//License Expire Date
         cy.get(this.selectorsList().dateCloseButton).click()    
-        cy.get(this.selectorsList().submitButton).eq(0).click()
     }
 
     updateDropdown(){
@@ -31,6 +30,10 @@ class MyInfoPage {
         cy.get(this.selectorsList().nationalitySelector).click()  
         cy.get(this.selectorsList().dropdownSelector).eq(1).click()          //Marital status
         cy.get(this.selectorsList().maritalStatusSelector).click()
+    }
+
+    submitUpdate(){
+        cy.get(this.selectorsList().submitButton).eq(0).click()
     }
 
     updateConfirmation(){
