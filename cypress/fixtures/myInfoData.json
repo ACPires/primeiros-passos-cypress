@@ -1,11 +1,8 @@
 {
     "firstName": "Joaquim",
     "lastName": "Albuquerque",
-    "nickname": "Joque",
     "eId": "2256",
     "oId": "1234",
     "driversLicense": "945682N",
-    "licenseExpireDate": "2029-02-24",
-    "sSN": "5725",
-    "sIN": "3216"
+    "licenseExpireDate": "2029-24-02"
 }

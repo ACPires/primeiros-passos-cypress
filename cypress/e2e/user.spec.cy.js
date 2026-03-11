@@ -19,7 +19,8 @@ describe('Orange HRM Tests', () => {
     loginPage.loginWithUser(userData.userSuccess.username,userData.userSuccess.password)
     dashboardPage.dashboardPageConfirmation()
     myInfoPage.accessMyInfo()
-    myInfoPage.updateFields(myInfoData.firstName,myInfoData.lastName,myInfoData.nickname,myInfoData.eId,myInfoData.oId,myInfoData.driversLicense,myInfoData.licenseExpireDate,myInfoData.sSN,myInfoData.sIN)
+    myInfoPage.updateFields(myInfoData.firstName,myInfoData.lastName,myInfoData.eId,myInfoData.oId,myInfoData.driversLicense,myInfoData.licenseExpireDate)
+    myInfoPage.updateDropdown()
     myInfoPage.updateConfirmation()
   })
   it('Login - Fail', () => {
