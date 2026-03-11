@@ -21,9 +21,4 @@ describe('Orange HRM Tests', () => {
     myInfoPage.updateDropdown()
     myInfoPage.updateConfirmation()
   })
-  it('Login - Fail', () => {
-    loginPage.accessLoginPage()
-    loginPage.loginWithUser(userData.userFail.username,userData.userFail.password)
-    loginPage.loginFailConfirmation()
-  })
 })

@@ -1,7 +1,6 @@
 class MyInfoPage {
     selectorsList() {
         const selectors = {
-            myInfoMenu: '[href="/web/index.php/pim/viewMyDetails"]',
             firstNameField: '[name="firstName"]',
             lastNameField: '[name="lastName"]',
             activeInputField: '.oxd-input--active',
@@ -14,10 +13,6 @@ class MyInfoPage {
             maritalStatusSelector: '.oxd-select-dropdown > :nth-child(1)'   //nth-child: 1 to 4
         }
         return selectors
-    }
-
-    accessMyInfo(){
-        cy.get(this.selectorsList().myInfoMenu).click()
     }
 
     updateFields(firstName,lastName,eId,oId,driversLicense,licenseExpireDate){
